@@ -500,8 +500,8 @@ main {
   #asideMostPopular {
     width: 100%;
     height: auto;
-    border-radius: 20px;
-    padding: 25px;
+    padding: 5px;
+    border-radius: 25px;
   }
 
   .conteneurPopulaires {
@@ -541,11 +541,9 @@ main {
   #leftCol {
     width: 100%;
     height: auto;
-    padding: 25px;
-    border-radius: 20px;
-
     display: flex;
     flex-direction: column;
+    padding:18px 0 18px 0;
   }
 
   #sectionFirstTitle {
@@ -678,7 +676,7 @@ main {
 .figureActivitiesGarde,
 .figureActivitiesLongchamp {
   height: 190px;
-  width: 330px;
+  width: 330px; 
   border: thin var(--tertiary-color) solid;
   border-radius: 20px;
   box-shadow: 5px 10px 5px var(--tertiary-color);
@@ -689,9 +687,16 @@ main {
   margin: 10px 0 10px 0;
 }
 
+
 /* Redimensionne les image qui ont une hauteur plus haute*/
-.imgActivities {
-  height: 100%;
+.imgActivitiesVP, 
+.imgActivitiesPNC,
+.imgActivitiesFP,
+.imgActivitiesL,
+.imgActivitiesF,
+.imgActivitiesNDG  {
+  /*height enlever à cause du bug sur chrome ajout de la max width et height*/
+  height: 70%;
   border-radius: 20px 20px 0 0;
   padding: 0px;
   object-fit: cover;
@@ -747,6 +752,7 @@ main {
     width: 100%;
     height: auto;
   }
+
   .conteneurActivites {
     display: flex;
     flex-direction: column;
@@ -779,6 +785,24 @@ main {
   .figureActivitiesLongchamp {
     height: 225px;
     width: 24%;
+  }
+  .imgActivitiesVP, .imgActivitiesPNC{
+    height: 85%;
+    border-radius: 20px 20px 0 0;
+    padding: 0px;
+    object-fit: cover;
+  }
+  .imgActivitiesFP, .imgActivitiesL{
+    height: 75%;
+    border-radius: 20px 20px 0 0;
+    padding: 0px;
+    object-fit: cover;
+  }
+  .imgActivitiesF, .imgActivitiesNDG{
+    height: 61%;
+    border-radius: 20px 20px 0 0;
+    padding: 0px;
+    object-fit: cover;
   }
 }
 @media screen and (min-width: 992px) {
@@ -804,7 +828,7 @@ main {
     margin-right: 5px;
   }
   .figureActivitiesFrioul {
-    height: 150px;
+    height: 153px;
     width: 24%;
   }
   .figureActivitiesCalanques {
@@ -812,12 +836,30 @@ main {
     width: 24%;
   }
   .figureActivitiesGarde {
-    height: 150px;
+    height: 153px;
     width: 24%;
   }
   .figureActivitiesLongchamp {
     height: 225px;
     width: 24%;
+  }
+  .imgActivitiesVP, .imgActivitiesPNC{
+    height: 85%;
+    border-radius: 20px 20px 0 0;
+    padding: 0px;
+    object-fit: cover;
+  }
+  .imgActivitiesFP, .imgActivitiesL{
+    height: 75%;
+    border-radius: 20px 20px 0 0;
+    padding: 0px;
+    object-fit: cover;
+  }
+  .imgActivitiesF, .imgActivitiesNDG{
+    height: 61%;
+    border-radius: 20px 20px 0 0;
+    padding: 0px;
+    object-fit: cover;
   }
 }
 /*------------------------------ Fin de section Activités à Marseille----------------------*/
@@ -828,30 +870,28 @@ main {
 Footer {
   background-color: var(--tertiary-color);
   padding: 18px 30px 18px 30px;
-  margin-top: 50px;
+  margin-top: 50px;  
 }
 
 #mainFooter {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: left;
-}
-
-.footerColumn h2 {
-  font-size: 1em;
+  align-items: left; 
 }
 
 .footerColumn ul {
   list-style: none; /*Pour enlever la puce du lien */
   padding: 0;
   margin: 0;
+  
 }
 
 .footerColumn li {
   text-decoration-color: none;
   margin-top: 15px;
   margin-bottom: 15px;
+  
 }
 
 .footerColumn li:hover {
@@ -865,24 +905,59 @@ Footer {
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 768px) {
+#bloc_page{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  Footer {
+    background-color: var(--tertiary-color);
+    padding: 18px 0 18px 0;
+    margin-top: 50px;    
+  }
   #mainFooter {
     display: flex;
     flex-direction: row;
-
     width: 100%;
   }
   .footerColumn {
     width: 33%;
   }
+  .footerColumn h3 {
+    padding-left: 30px;
+  }
+  
+  .footerColumn ul {
+    list-style: none; /*Pour enlever la puce du lien */
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;    
+  }
 }
 
 @media screen and (min-width: 992px) {
+  Footer {
+    background-color: var(--tertiary-color);
+    padding: 18px 0 18px 0;
+    margin-top: 50px;    
+  }
   #mainFooter {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 
     width: 100%;
+  }
+  .footerColumn h3 {
+    padding-left: 30px;
+  }
+  
+  .footerColumn ul {
+    list-style: none; /*Pour enlever la puce du lien */
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;    
   }
 
   .footerColumn {
