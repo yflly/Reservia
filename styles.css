@@ -234,7 +234,6 @@ main
 }
 .boxSearch input{
 display:none
-
 }
 
 .boxSearch :hover{
@@ -245,7 +244,6 @@ display:none
 #filter{
     display: flex;
 	flex-direction: row;
-	/*align-items: center;*/
     flex-wrap:wrap;
 
 	font-weight: bold;
@@ -329,8 +327,7 @@ display:none
 /*MEDIA QUERIES*/
 @media screen and (min-width:768px){
 #filter{
-    margin:15px 0 15px 0;
-    
+    margin:15px 0 15px 0;    
 }
 
     .filterTitle{
@@ -412,7 +409,6 @@ display:none
  /*Cadre contenant le texte et les étoiles */
 .figureAside{
     height: 130px;
-    /*width: 320px;*/
     width:96%;
     border: thin var(--tertiary-color) solid;
     border-radius: 20px;
@@ -429,8 +425,6 @@ display:none
 }
 
 .imagePopular {
-    /*max-width: 125px;
-    max-height: 320px;*/
     width:40%;
     border-radius: 10px 0 0 10px;
     object-fit:cover;
@@ -458,8 +452,6 @@ display:none
 #leftCol{
     padding: 18px 18px 18px 18px
 }
-
-
 .figurehebergements{
     height: 190px;
     width: 320px;
@@ -526,7 +518,6 @@ display:none
    }
     /*Cadre contenant le texte et les étoiles */
    .figureAside{
-       /*width: 320px;*/
        width:30%;
        height: 220px;
        border: thin var(--tertiary-color) solid;
@@ -633,8 +624,6 @@ display:none
     }
     
     .imagePopular {
-        /*max-width: 125px;
-        max-height: 320px;*/
         width:40%;
         border-radius: 10px 0 0 10px;
         object-fit:cover;
