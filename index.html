@@ -9,19 +9,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/e393f55781.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div id="bloc_page">
-    <!---------------------------------------- Début de l'en tête de page  ----------------------------------->
+    <!--Début de l'en tête de page -->
     <header id="mainHeader">
       <div class="boxLogo">
-        <a href="index.html"><img class=logo src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
+        <a href="index.html"><img class=logo src="images/logo/Reservia@3x.png" alt="Logo Reservia" /></a>
       </div>
       <div class="boxHebergements"> 
-        <a href="#hebergements" class="navHebergements">Hébergements</a>
-      </div class="">
+        <a href="#sectionFirstTitle" class="navHebergements">Hébergements</a>
+      </div>
       <div class="boxActivites">
         <a href="#activites" class="navActivites">Activités</a> 
       </div>
@@ -29,12 +28,12 @@
         <a href="#" class="inscription">S'inscrire</a>
       </div>
     </header>
-    <!-----------------------------------Ici se termine l'en tête de page------------------------------------->
+    <!--Ici se termine l'en tête de page-->
    
-   <!------------------------------- Section de barre de recherche et filtre---------------------------------->
+   <!--Section de barre de recherche et filtre-->
    <main id="pageContent">
    <section id="sectionSearchFilter">
-    <p class=pIntro>Trouvez votre hébergement pour des vacances de rêve</p>
+    <h1 class=pIntro>Trouvez votre hébergement pour des vacances de rêve</h1>
     <p class=pIntro2>En plein centre ville ou en pleine nature</p>
 
     <!--Barre de recherche-->
@@ -50,12 +49,12 @@
     
     <!--Filtre-->
     <div id=filter>
-      <h3 class=filterTitle>Filtres</h3>
+      <p class=filterTitle>Filtres</p>
       
-      <div class="filterButton"><i class="fas fa-money-bill-wave"></i><input type="button" name="économique" id="économique">économique</div>
-      <div class="filterButton"><i class="fas fa-child"></i><input type="button" name="familiale" id="familiale">Familiale</div>
-      <div class="filterButton"><i class="fas fa-heart"></i><input type="button" name="romantique" id="romantique">Romantique</div>
-      <div class="filterButton"><i class="fas fa-dog"></i><input type="button" name="animaux" id="animaux">Animaux autorisés</div>
+      <div class="filterButton"><i class="fas fa-money-bill-wave"></i><input type="button" name="économique" id="économique" value="économique">économique</div>
+      <div class="filterButton"><i class="fas fa-child"></i><input type="button" name="familiale" id="familiale" value="familiale">Familiale</div>
+      <div class="filterButton"><i class="fas fa-heart"></i><input type="button" name="romantique" id="romantique" value="romantique">Romantique</div>
+      <div class="filterButton"><i class="fas fa-dog"></i><input type="button" name="animaux" id="animaux" value="animaux">Animaux autorisés</div>
     </div>
 
     <div class="infoSearchFilter">
@@ -64,9 +63,9 @@
     </div>    
   </section>
 
-    <!---------------------Ici se termine la section de barre de recherche et filtre-------------------------->
+    <!--Ici se termine la section de barre de recherche et filtre-->
     
-    <!-------------------------------- Section - Les plus populaires ----------------------------------------->
+    <!--Section Les plus populaires -->
     
     <section id="sectionFirst">
           <!--Début de la colonne de droite-->
@@ -122,20 +121,21 @@
             </figure>
           </div>
           </aside>
-          <!----------------------Ici se termine Section - Les plus populaires ------------------------------->
+          <!--Ici se termine Section - Les plus populaires -->
           
-          <!--------------------------------- Section - Hébergements ----------------------------------------->
+          <!--Section - Hébergements -->
           
           <div id="leftCol">
             <div><h1 id="sectionFirstTitle">Hébergements à Marseille</h1></div>
             <div class="conteneurFigureHebergement"><!--pour contenir les figures avec flex wrap-->
-            <figure class="figurehebergements">
+            
+              <div class="figurehebergements">
               <!--Elements qui vient enrichir le texte pour compléter les informationsavec l'élément figcaption-->
               <img class="imageHebergement" src="images/hebergements/canneb.jpg" alt="Auberge de La Cannebière" id="canneb" />
-              <figcaption class="textPictHebergements">
+              <div class="textPictHebergements">
                 <p class="pHebergements">Auberge de La Cannebière</p>
                 <p class="pHebergements2">Nuit à partir de <strong>25€</strong></p>
-              </figcaption>
+              </div>
               <div class="star">
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star blueStar"></span>
@@ -143,13 +143,14 @@
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star"></span>
               </div>
-            </figure>
-            <figure class="figurehebergements">
+            </div>
+
+            <div class="figurehebergements">
               <img class="imageHebergement" src="images/hebergements/port.jpg" alt="Hôtel du port" id="port" />
-              <figcaption class="textPictHebergements">
+              <div class="textPictHebergements">
                 <p class="pHebergements">Hôtel du port</p>
                 <P class="pHebergements2">Nuit à partir de <strong>52€</strong></p>
-              </figcaption>
+              </div>
               <div class="star">
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star blueStar"></span>
@@ -157,13 +158,14 @@
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star blueStar"></span>
               </div>
-            </figure>
-            <figure class="figurehebergements">
+            </div>
+
+            <div class="figurehebergements">
               <img class="imageHebergement" src="images/hebergements/mouettes.jpg" alt="Hôtel Les mouettes" id="mouettes" />
-              <figcaption class="textPictHebergements">
+              <div class="textPictHebergements">
                 <p class="pHebergements">Hôtel les mouettes</p>
                 <p class="pHebergements2">Nuit à partir de <strong>76€</strong></p>
-              </figcaption>
+              </div>
               <div class="star">
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star blueStar"></span>
@@ -171,13 +173,14 @@
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star"></span>
               </div>
-            </figure>
-            <figure class="figurehebergements">
+            </div>
+
+            <div class="figurehebergements">
               <img class="imageHebergement" src="images/hebergements/mer.jpg" alt="Hôtel de la mer" id="mer" />
-              <figcaption class="textPictHebergements">
+              <div class="textPictHebergements">
                 <p class="pHebergements">Hôtel de la mer</p>
                 <p class="pHebergements2">Nuit à partir de <strong>46€</strong></p>
-              </figcaption>
+              </div>
               <div class="star">
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star blueStar"></span>
@@ -185,13 +188,14 @@
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
               </div>
-            </figure>
-            <figure class="figurehebergements">
+            </div>
+
+            <div class="figurehebergements">
               <img class="imageHebergement" src="images/hebergements/panier.jpg" alt="Auberge Le Panier" id="panier" />
-              <figcaption class="textPictHebergements">
+              <div class="textPictHebergements">
                 <p class="pHebergements">Auberge Le Panier</p>
                 <p class="pHebergements2">Nuit à partir de <strong>23€</strong></p>
-              </figcaption>
+              </div>
               <div class="star">
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star blueStar"></span>
@@ -199,13 +203,14 @@
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star"></span>
               </div>
-            </figure>
-            <figure class="figurehebergements">
+            </div>
+
+            <div class="figurehebergements">
               <img class="imageHebergement" src="images/hebergements/amina.jpg" alt="Hôtel chez Amina" id="amina" />
-              <figcaption class="textPictHebergements">
+              <div class="textPictHebergements">
                 <p class="pHebergements">Hôtel chez Amina</p>
                 <p class="pHebergements2">Nuit à partir de <strong>96€</strong></p>
-              </figcaption>
+              </div>
               <div class="star">
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star blueStar"></span>
@@ -213,12 +218,13 @@
                 <span class="fa fa-star blueStar"></span>
                 <span class="fa fa-star blueStar"></span>
               </div>
-            </figure>
+            </div>
+
             </div><a href="#" class="afficherPlus">Afficher plus</a></div>
         </section>
-        <!------------------------------Ici se termine Section - Hébergements ------------------------------->
+        <!--Ici se termine Section - Hébergements -->
           
-        <!------------------------------- Section - Activités  ---------------------------------------------->
+        <!-- Section - Activités -->
           
         <section id="sectionActivities">
           <div id="Activites">
@@ -265,11 +271,11 @@
           </div>
           </div>
         </section>
-      <!------------------------------Ici se termine Section - Activités ------------------------------------>   
+      <!--Ici se termine Section - Activités -->   
     </main>
-    <!------------------------Ici se termine le #pageContent------------------------------------------------->
+    <!-- Ici se termine le #pageContent-->
 
-    <!------------------------------Début du pied de page---------------------------------------------------->
+    <!--Début du pied de page-->
     <footer id="mainFooter">
       <div class="footerColumn">
         <h3>A propos</h3>
@@ -294,8 +300,9 @@
         </ul>
       </div>
     </footer>
-    <!-------------------------Ici se termine le pied de page----------------------------------------------->
+    <!--Ici se termine le pied de page-->
   </div>
   <!--Ici se termine le #bloc_page-->
+  <script src="https://kit.fontawesome.com/e393f55781.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -8,9 +8,6 @@
 
 body {
   font-family: "Railway", sans-serif;
-
-  /*display: flex;
-	justify-content: center;*/
 }
 
 #bloc_page {
@@ -212,7 +209,7 @@ main {
   color: white;
 
   border: 0;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 15px;
   position: relative;
 
   display: flex;
