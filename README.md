@@ -4,6 +4,8 @@
 
 Reservia permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. 
 
+![The picture](./Reservia.png "picture")
+
 # Fonctionnalités
 Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ
 de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En
